@@ -24,15 +24,17 @@ class todoservice{
 
     add_todo(todo){
         // Your code here
+        todo={
+           "title": "PSD",
+           "description": "Fall-2022",
+           "done":true 
+        }
+        console.log("Prior to adding: ",this.todos)
+        this.todos.todo.push(todo)
+        console.log("After adding: ",this.todos)
+        return this.todos
     }
 
-    delete_todo(id){
-        // Your code here
-    }
-
-    update_todo(id, todo){
-        // Your code here
-    }
 }
 
 
