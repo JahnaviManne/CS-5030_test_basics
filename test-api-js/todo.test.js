@@ -1,5 +1,6 @@
 
 
+
 var todoservice = require('./todo.service.js');
 describe('todo test suite', () => {
 
@@ -30,7 +31,12 @@ describe('todo test suite', () => {
     })
 
     test("delete_todo(id) ", () =>{
-        expect(todo_service.delete_todo().todo.length).toEqual(2)
+        expect(todo_service.delete_todo().todo.length).toEqual(3)
     })
+
+    test("update_todo(id, description, todo) ", () =>{
+       expect(todo_service.update_todo().todo[2]).toEqual({
+       "title": "T1","description": "November-2022","done":true})
+   })
 
 });
