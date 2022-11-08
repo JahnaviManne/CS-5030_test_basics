@@ -29,4 +29,8 @@ describe('todo test suite', () => {
           
     })
 
+    test("delete_todo(id) ", () =>{
+        expect(todo_service.delete_todo().todo.length).toEqual(2)
+    })
+
 });

@@ -35,6 +35,14 @@ class todoservice{
         return this.todos
     }
 
+     delete_todo(id){
+        id=2
+        console.log("Prior to deleting : ",this.todos)
+        this.todos.todo.splice(id)
+        console.log("After successful deletion : ",this.todos)
+        return this.todos
+    }
+
 }
 
 
